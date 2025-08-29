@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branon Kipngeno Javascript Asssignment </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Branon Kipngeno JavaScript Fundamentals Practice project</h1>
+            <p>Learn JavaScript concepts through interactive task</p>
+        </header>
+
+        <main>
+            <!-- Part 1: Variables and Conditionals -->
+            <section class="card">
+                <h2>Part 1: Variables & Conditionals</h2>
+                <p>Enter your age to see different messages based on your input:</p>
+                <div class="input-group">
+                    <input type="number" id="ageInput" placeholder="Enter your age">
+                    <button onclick="checkAge()">Check Age</button>
+                </div>
+                <div id="ageOutput" class="output">Result will appear here</div>
+            </section>
+
+            <!-- Part 2: Functions -->
+            <section class="card">
+                <h2>Part 2: Functions</h2>
+                <p>Enter two numbers to perform calculations:</p>
+                <div class="input-group">
+                    <input type="number" id="num1" placeholder="First number">
+                    <input type="number" id="num2" placeholder="Second number">
+                </div>
+                <div class="button-group">
+                    <button onclick="calculate('add')">Add</button>
+                    <button onclick="calculate('multiply')">Multiply</button>
+                </div>
+                <div id="functionOutput" class="output">Result will appear here</div>
+            </section>
+
+            <!-- Part 3: Loops -->
+            <section class="card">
+                <h2>Part 3: Loops</h2>
+                <p>Enter a number to see loop examples:</p>
+                <div class="input-group">
+                    <input type="number" id="loopInput" placeholder="Enter a number (1-10)">
+                    <button onclick="runLoops()">Run Loops</button>
+                </div>
+                <div id="loopOutput" class="output">Result will appear here</div>
+            </section>
+
+            <!-- Part 4: DOM Interactions -->
+            <section class="card">
+                <h2>Part 4: DOM Interactions</h2>
+                <p>Try these DOM manipulation examples:</p>
+                <div class="button-group">
+                    <button onclick="changeBackground()">Change Background</button>
+                    <button onclick="addListItem()">Add List Item</button>
+                    <button onclick="updateText()">Update Text</button>
+                </div>
+                <div id="domOutput" class="output">
+                    <p>Original content - watch how this changes!</p>
+                    <ul id="demoList">
+                        <li>Initial item 1</li>
+                        <li>Initial item 2</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> Branon JavaScript Fundamentals Project &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
